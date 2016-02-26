@@ -1,0 +1,96 @@
+<html>
+	<head>
+    <meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/lightbox.css">
+	</head>
+	<body>
+		<div id="header">
+			<div id="first">
+				<img src="images/x.png" id="iconX" onClick="esconderMenu()">
+				<img src="images/images.png" id="icon" onClick="mostrarMenu()">
+				<img src="images/logotipo.png" id="logotipo">
+        <input type="text" placeholder="Search our stock" id="search"> 
+        <div class="right">
+          <label id="info">Free shipping </label><br /><label id="info2"> on orders over $50</label>
+				  <img src="images/bag.png" id="bag">
+          <label id="bag-label">BAG:</label><label id="bag-number">0</label>
+        </div>        
+        <div class="clear"> </div>
+			</div>
+        <div class="clear"> </div>
+			<div id="menu">		
+          <div class="links">
+					  <a href="">Potions</a><span class="seta-baixo"></span>
+					  <a href="">Ingredients</a><span class="seta-baixo"></span>	
+					  <a href="">Books</a><span class="seta-baixo"></span>					
+					  <a href="">Supplies</a><span class="seta-baixo"></span>			
+					  <a href="">Charms</a><span class="seta-baixo"></span>			
+					  <a id="clearance" href="">Clearance!</a>
+          </div>          
+          <div class="sign">
+            <a href="">Sign in</a> or <a href="">Sign Up</a>
+          </div>          
+          <div class="clear"> </div>			 
+      </div>
+		</div>
+		
+		<div id="products">
+      <h2>Potions</h2>
+      <div>      
+        <div class="potions" id="aging-potion" onclick="lightbox(1)"><img src="products/aging-potion.png"><label id="nameProd">Aging potion - </label><label id="priceProd">$29.99</label></div>
+        <div class="potions" id="bulgeye-potion" onclick="lightbox(2)"><img src="products/bulgeye-potion.png"><label id="nameProd">Bulgeye Potion - </label><label id="priceProd">$19.99</label></div>
+        <div class="potions" id="dragon-tonic" onclick="lightbox(3)"><img src="products/dragon-tonic.png"><label id="nameProd">Dragon Tonic - </label><label id="priceProd">$64.99</label></div>
+        <div class="potions" id="love-potion" onclick="lightbox(4)"><img src="products/love-potion.png"><label id="nameProd">Love Potion - </label><label id="priceProd">$29.99</label></div>
+        <div class="potions" id="polyjuice-potion" onclick="lightbox(5)"><img src="products/polyjuice-potion.png"><label id="nameProd">Polyjuice Potion - </label><label id="priceProd">$99.99</label></div>
+        <div class="potions" id="sleeping-draught" onclick="lightbox(6)"><img src="products/sleeping-draught.png"><label id="nameProd">Sleeping Draught - </label><label id="priceProd">$29.99</label></div>
+      </div>
+		</div>
+    <div id="footer">
+        <div id="signup">
+          <h3>Sign up for our Newsletter</h3>
+          <label>Sign up for our Newsletter & get exclusive discounts</label>
+          <br />
+          <input type="text" placeholder="Enter your email" id="email"> 
+          <button type="submit" id="submit">SUBMIT</button>
+        </div>
+        <div id="social">
+				  <a href="">COMPANY</a>
+			    <a href="">CONTACT US</a>
+			    <a href="">SHIPPING</a>	<br />			
+			    <a href="">RETURNS</a>
+			    <a href="">CAREERS</a> <br />
+          <img src="images/facebook.png">
+          <img src="images/twitter.png">
+          <img src="images/pinterest.png">
+          <img src="images/tumbler.png">
+          <img src="images/google.png"> <br />
+          <p id="credits">@2015 Merlin's Potions. All Rights Reserved</p>
+        </div>
+        <div class="clear"> </div>
+    </div>
+
+  <div id="wrapper">
+
+   <aside id="lightbox" class="modal">
+    <div>
+     <img id="image-modal" src="">
+     <div id="right-modal">
+       <h4 id="title-modal">Modal box</h4>
+       <h4> Use/Effect </h4>
+       <label id="use-modal"></label>
+       <h4> Ingredients </h4>
+       <label id="ingredients-modal"></label>
+       <h4> Price 
+       <label id="price-modal"></label></h4>
+       <br />
+       <button type="submit" id="addCart" onClick="addCart()">ADD TO CART</button>
+     </div>
+     <div class="clear"> </div>
+     <a href="#close" title="Fechar">Fechar</a>
+    </div>
+   </aside>
+  </div>
+		<script src="js/main.js"></script>
+	</body>
+</html>
