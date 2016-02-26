@@ -1,0 +1,407 @@
+body{
+  margin:0;
+}
+       
+.clear { clear: both; }
+
+#first{
+  background-color:#fff;
+  width:100%;
+}
+
+#menu{
+  background-color: rgb(82,52,104);
+	font-size:1.1em;
+  width:100%;
+  display:block;
+  padding-top:15px;
+  padding-bottom:15px;
+  font-style: italic; 
+}
+	
+#menu a {
+  text-align:center;
+  text-decoration: none;
+	padding: 5px 10px;
+	color: #fff;
+  font-style: italic; 
+}	
+
+.right{
+  float:right;
+  display:inline-block;
+  margin-top:1%;
+  width:35%;
+}
+
+#search{
+  border:1px solid #000;
+  border-radius:5px;
+  background-image:url('../images/search.png');
+  background-repeat: no-repeat;
+  background-size: 25px auto;
+  background-position: 10px;
+  height:30px;
+  margin-left:5%;
+  float:center;
+  padding-left:40px;
+  position: absolute;
+}
+
+#nameProd{
+  font-size:1.1em;
+}
+
+#priceProd{
+  font-size:1.1em;
+  color:rgb(215,58,30);
+}
+
+#logotipo{
+  width:20%;
+  height:auto;
+  padding-bottom:2%;
+}
+
+#info{
+  color:rgb(215,58,30);
+	font-size:1.4em;
+  font-style: italic; 
+  position: relative;
+  top: 10px;
+}
+
+#info2{
+  color:rgb(215,58,30);
+	font-size:1.1em;
+  font-style: italic; 
+  margin-right:5%;
+  position: relative;
+  top: -10px;
+}
+
+#bag{
+  height:40px;
+  margin-right:5%;
+  position: relative;
+  top: -10px;
+}
+
+#bag-label{
+  color:gray;
+	font-size:1.1em;
+  margin-right:10px;
+  position: relative;
+  top: -25px;
+}
+
+#bag-number{
+  color:rgb(215,58,30);
+	font-size:1.1em;
+  position: relative;
+  top: -25px;
+}
+
+.seta-baixo:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  width: 0; 
+  height: 0; 
+
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #fff;
+}
+
+.links{
+  margin-left:5%;
+  float:left;
+  display:inline-block;
+}
+
+.sign{
+  float:right;
+	color: #fff;
+  margin-right:5%;
+}
+
+#teste{
+  display:inline-block;
+  width:20%;
+}
+
+h2{
+  margin-left:5%;
+}
+
+h3{
+  margin-top:-5px;
+  text-decoration: none;
+	color: #000;
+  font-style: italic;
+  font-weight:normal;
+}
+
+#signup{
+  background-color:white;
+  border-radius:10px;
+  width:30%;
+  display:inline-block;
+  margin-right:5%;
+  float:right;
+  padding:2%;
+}
+
+#signup label{
+  text-decoration: none;
+	color: #000;
+}
+
+#signup input{
+  border:1px solid #000;
+  border-radius:5px;
+  height:30px;
+  margin-top:3%;
+  padding:5px;
+}
+
+#icon{
+	display:none;
+	opacity:0;
+}
+
+#iconX{
+  display:none;
+  opacity:0;
+  float:left;
+  width:7%;
+  margin:10px;
+}
+
+#submit{
+  border:1px solid #fff;
+  border-radius:5px;
+  height:30px;
+  background-color:rgb(215,58,30);
+  color:#fff;
+}
+
+#social{
+  display:inline-block;
+  float:left;
+  margin-left:5%;
+}
+
+#social img{
+  width:13%;
+  margin-right:3%;
+  margin-top:3%;
+}
+
+#credits{
+	font-size:0.8em;
+  margin-top:5%;
+  margin-left:3%;
+  color:gray;
+}
+ 
+#footer{
+  background-color:rgb(230,230,230);
+  width:100%;
+  padding-top:3%;
+  padding-bottom:3%;
+}
+
+#footer a {
+  text-align:center;
+  text-decoration: none;
+	padding: 5px 10px;
+	color: rgb(215,58,30);
+	font-size:1.1em;
+}	
+
+#clearance{
+  border-radius: 5px;
+  background-color:#4A192C;
+}
+
+.potions{
+  width:30%;
+  display:inline-block;
+  text-align:center;
+  margin-bottom:20px;
+}
+
+.links div{
+display:inline-block;
+}
+
+.potions img{
+	width:100%;
+	height:auto;
+}
+
+@media (min-width: 751px) {
+
+  #menu {
+	  opacity:1 !important;
+	  display:inline-block !important;
+  }
+
+  #logotipo{
+	  opacity:1 !important;
+	  display:inline-block !important;
+  }
+
+  #icon{
+	  opacity:0 !important;
+	  display:none !important;
+  }
+
+  #iconX{
+	  opacity:0 !important;
+	  display:none !important;
+  }
+
+  #bag{
+	  opacity:1 !important;
+	  display:inline-block !important;
+  }
+  
+  #bag-label{
+	  opacity:1 !important;
+	  display:inline-block !important;
+  }
+
+  #bag-number{  
+	  opacity:1 !important;
+	  display:inline-block !important;
+  }
+
+  #search{
+    margin-left:5% !important;
+	  display:inline-block !important;
+    float:center !important;
+    padding-left:40px !important;
+    top: 30px !important; 
+  }
+
+}
+
+@media (max-width: 750px) {
+
+  #menu{
+	  width:100%;
+    padding:0;
+	  display:none;
+	  opacity:0;
+    margin:0;
+  }
+
+  #menu a{
+    text-align:left;
+  }
+
+  #logotipo{
+    width:50%;
+    height:auto;
+    margin-left:4%;
+  }
+
+  .right{
+    width:30%;
+  }  
+
+  #info{
+    opacity:0;
+    display:none;
+  }
+
+  #info2{
+    opacity:0;
+    display:none;
+  }
+
+  #search{
+	  display:none;
+	  opacity:0;
+    position:static;
+    margin:10px;
+    float:right;
+  }
+
+  #bag{
+    display:block;
+    left:30%;
+    margin-bottom:15px; 
+    margin-left:0; 
+    width:30%;
+    height:auto;
+  }
+  
+  #bag-label, #bag-number{
+    font-size:0.9em;
+    left:20%;    
+  }
+  
+  .potions{
+    width:45%;
+    font-size:0.8em;
+  }
+
+  #icon{
+	  display:block;
+	  opacity:1;
+	  width:10%;
+	  height:auto;
+	  float:left;
+    margin:10px;
+  }	
+  
+  #social{
+    margin-left:10%;
+  }
+
+  #social a{
+    display:none;
+    opacity:0;
+  }
+
+  #signup{
+    margin-right:10px;
+    width:90%;
+    display:inline-block;
+  }
+  
+  .links span{
+    display:none;
+    opacity:0;
+  }
+  
+  .links{
+    width:100%;
+    padding:0;
+    margin:0;
+  }
+
+  .links a{
+    display:block;
+    width:100%;
+    border-bottom:0.5px solid white;
+    font-size:0.8em;
+  }
+
+  .sign{
+    margin-top:5%;
+    font-size:0.8em;
+    float:left;
+  }
+
+  #clearance{
+    padding:0; 
+    border-radius:0; 
+  }
+
+}
